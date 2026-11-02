@@ -97,7 +97,7 @@
     </header>
 
     <article>
-      <p style="margin-top:20px">Developer: &lt;your name or company&gt;, contact: <a href="mailto:&lt;email&gt;">&lt;email&gt;</a>.</p>
+      <p style="margin-top:20px">Developer: One Good Dev, contact: <a id="contact" href="#">enable JavaScript to see the email</a>.</p>
 
       <h2>1. Data we collect</h2>
       <p>None. The app does not collect, store on servers, or share with the developer or third parties any personal data, messages, contacts, device information or usage data. There are no ads, analytics or trackers.</p>
@@ -124,6 +124,14 @@
 
     <footer>© 2026 Agat: encryptor</footer>
   </main>
+    <script>
+    (function () {
+      var email = atob('b25lLmdvb2QuZGV2ZWxvcGVyQGdtYWlsLmNvbQ==');
+      var link = document.getElementById('contact');
+      link.href = 'mail' + 'to:' + email;
+      link.textContent = email;
+    })();
+  </script>
 </body>
   
 </html>
